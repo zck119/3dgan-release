@@ -4,6 +4,8 @@ This repository contains pre-trained models and sampling code for the 3D Generat
 
 http://3dgan.csail.mit.edu
 
+<img src="http://3dgan.csail.mit.edu/images/results.jpg">
+
 ## Prerequisites
 #### Torch
 We use Torch 7 (http://torch.ch) for our implementation with these additional packages:
@@ -22,7 +24,9 @@ Our current release has been tested on Ubuntu 14.04.
 #### Cloning the repository
 ```sh
 git clone git@github.com:zck119/3dgan-release.git
+cd 3dgan-release
 ```
+
 #### Downloading pretrained models 
 For CPU (947 MB):
 ```sh
@@ -32,6 +36,7 @@ For GPU (618 MB):
 ```sh
 ./download_models_gpu.sh
 ```
+
 #### Downloading latent vector inputs for demo
 ```sh
 ./download_demo_inputs.sh
@@ -110,7 +115,7 @@ python visualize.py chair_demo.mat -u 0.9 -t 0.1 -i 1 -mc 2
 
 ## Reference
 
-    @inproceedings{zhang2016learning,
+    @inproceedings{3dgan,
       title={{Learning a Probabilistic Latent Space of Object Shapes via 3D Generative-Adversarial Modeling}},
       author={Wu, Jiajun and Zhang, Chengkai and Xue, Tianfan and Freeman, William T and Tenenbaum, Joshua B},
       booktitle={Advances In Neural Information Processing Systems},
